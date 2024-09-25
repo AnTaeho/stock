@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/stock
+    username: root
+    password: an902318
+    hikari:
+      maximum-pool-size: 40
+
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
+  jpa:
+#    show-sql: true
+    properties:
+      hibernate:
+#        use_sql_comments: true
+#        format_sql: true
+    hibernate:
+      ddl-auto: create
